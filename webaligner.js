@@ -45,14 +45,12 @@ var webAligner = (function()
     if (wordArray.length<2) return console.log("Need at least two words!");
     wordStepPos = [];
     if (weight) {
-      console.log('Weighting by word length');
       var position = 0;
       for (i=0; i<wordArray.length-1; i++) {
         position += wordArray[i].length;
         wordStepPos.push(Math.floor(position/characters*steps));
       }
     } else {
-      console.log('Not weighting by word length');
       for (i=1; i<wordArray.length; i++) {
         wordStepPos.push(Math.floor(i/wordArray.length*steps));
       }
@@ -74,7 +72,6 @@ var webAligner = (function()
         }
         rms.push(Math.sqrt(blockTotal/blockSize));
       }
-      console.log(rms);
 
       var times = [];
       times.push(startTs);
