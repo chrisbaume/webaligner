@@ -4,11 +4,13 @@ A client-side forced aligner for speech that attempts to find word boundaries. W
 
 ## Usage
 
+An example interface can be found [here](https://github.com/chrisbaume/webaligner-example).
+
 ```
 bower install webaligner
 ```
 
-```
+```javascript
 <script src="bower_components/webaligner/webaligner.js"></script>
 <script>
   var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
