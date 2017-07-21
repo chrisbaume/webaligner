@@ -1,0 +1,24 @@
+{
+  "name": "webaligner",
+  "main": "webaligner.js",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Baume <chrisbaume@gmail.com>"
+  ],
+  "description": "A client-side forced aligner for speech",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "speech",
+    "align"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
