@@ -12,7 +12,6 @@ var webAligner = (function()
   function getStepPositions(wordArray, steps, weight)
   {
     var wordStepPos = [];
-    var characters = words.length-wordArray.length+1;
     if (wordArray.length<2) {
       console.log("Need at least two words!");
       return null;
