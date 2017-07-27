@@ -1,6 +1,12 @@
 # WebAligner
 
-A client-side forced aligner for speech that attempts to find word boundaries. Works by plotting the RMS energy of the speech, then using gradient descent to find the local minimum for word boundaries.
+A simple lightweight client-side forced aligner for speech.
+
+## Algorithm
+
+1. Estimate the word boundaries (optionally using the length of each word)
+1. Calculate the RMS energy plot of the audio
+1. For each estimated word boundary, use gradient descent to find the local minimum of the RMS energy plot
 
 ## Usage
 
